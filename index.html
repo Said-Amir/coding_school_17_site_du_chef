@@ -6,23 +6,54 @@
     <title>Mon Projet</title>
     
     <!-- Bootstrap -->
-    <link rel="stylesheet" type="text/css" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
   
     <!-- Fontawesome -->
-    <link rel="stylesheet" type="text/css" href="/node_modules/@fortawesome/@fontawesome/styles.css">
+    <link rel="stylesheet" type="text/css" href="">
   
     <!-- Styles personnalisés -->
-    <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
   
 </head>
 <body>
     <!-- Début du Header-->
     <header>
         <!-- NavBar -->
-        <nav>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <!-- partie Gauche navbar -->
+                <div class="container-fluid col-5.5 ">
+                    <div class="collapse navbar-collapse d-flex justify-content-between border-top border-bottom border-1" id="navbarNavAltMarkup">
+                        <a class="nav-link text-white p-3 myUppercase " href="#">Home</a>
+                        <a class="nav-link text-white p-3 myUppercase " href="#">About us</a>
+                        <a class="nav-link text-white p-3 myUppercase " href="#">menu list</a>
+                        <a class="nav-link text-white p-3 myUppercase " href="#">team</a>
+                    </div>
+                </div>
+                <!-- fin partie gauche -->
 
-        </nav>
+                <!-- logo -->
+                <div class="col-1 d-flex justify-content-center mx-3">
+                    <img src="./assets/img/logo.png" alt="">
+                </div>
+                <!-- fin logo -->
+
+                <!-- partie droite navbar -->
+                <div class="container-fluid col-5.5 ">
+                    <div class="collapse navbar-collapse d-flex justify-content-between border-top border-bottom border-1" id="navbarNavAltMarkup">
+                        <a class="nav-link text-white p-3 myUppercase" href="#">reservation</a>
+                        <a class="nav-link text-white p-3 myUppercase" href="#">blog</a>
+                        <a class="nav-link text-white p-3 myUppercase" href="#">testimonials</a>
+                        <a class="nav-link text-white p-3 myUppercase" href="#">contact us</a>
+                    </div>
+                </div>
+                <!-- fin partie droite -->
+            </nav>
+        </div>
         <!-- Nav de la NavBar -->
+        <div class="decoBottom">
+            
+        </div>
     </header>
     <!-- Fin du Header -->
 
@@ -38,8 +69,6 @@
     </footer>
     <!-- Fin du Footer-->
 
-    <!-- Début du Scripts -->
-    <script type="text/javascript" "src="/assets/js/main.js"></script>"
-    <!-- Fin du Sciprts -->
+    
 </body>
 </html>
