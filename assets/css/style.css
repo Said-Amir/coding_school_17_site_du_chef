@@ -1,27 +1,204 @@
 header {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/banner1.jpg");
-  background-size: cover;
-  background-position: center;
-  padding-top: 2vh;
   height: 100vh;
-}
-header .decoBottom {
-  background-image: url(../img/bottom_decoration_img.png);
-  position: absolute;
-  bottom: 0;
-  z-index: 1;
-  height: 2vh;
   width: 100%;
 }
-header .container nav div div a {
-  text-decoration: none;
+header .myCarousel {
+  position: absolute;
+  z-index: -2;
+  width: 100%;
+  height: 100vh;
 }
-header .container nav div div :hover {
+header .myCarousel .myCarousel-indicators {
+  position: absolute;
+  right: 0;
+  bottom: 20px;
+  left: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  padding-left: 0;
+  margin-right: 15%;
+  margin-left: 15%;
+  list-style: none;
+}
+header .myCarousel .myCarousel-indicators .myIndicators {
+  color: rgba(255, 255, 255, 0.699);
+  margin: 0 3px;
+}
+header .myCarousel div .divHeight {
+  width: 100%;
+  height: 98vh;
+}
+header .myNavBar {
+  align-items: center;
+}
+header .myNavBar ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 2.5vh 0 0 0;
+  border-bottom: rgba(255, 255, 255, 0.55) solid 1px;
+  border-top: rgba(255, 255, 255, 0.55) solid 1px;
+}
+header .myNavBar ul li {
+  display: flex;
+  align-items: center;
+  padding: 14px 30px;
+  margin: 0;
+}
+header .myNavBar ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 0.9em;
+  padding: 0;
+  margin: 0;
+}
+header .myNavBar ul :hover {
   background-color: #C42D40;
+}
+header .myNavBar img {
+  margin: 0 4vw;
+}
+header .myText {
+  margin-top: 120px;
+}
+header .myText h2 {
+  font-size: 3.5em;
+  margin: 0;
+}
+header .myText div {
+  margin-top: 65px;
+}
+header .myText div a {
+  text-decoration: none;
+  color: white;
+  padding: 15px 25px;
+  border-radius: 25px;
+  font-size: 0.95em;
+  margin: 0 12px;
+}
+header .myText div .leftBtn {
+  background-color: white;
+}
+header .myText div .rightBtn {
+  background-color: #AF2839;
+}
+
+.decoBottom {
+  height: 2px;
+  position: absolute;
+  z-index: 3;
+  width: 100%;
+  background-image: url("../img/bottom_decoration_img.png");
+  top: 95.5vh;
+}
+
+main #story {
+  background-image: url("../img/main_bg.jpg");
+}
+main #story .box {
+  position: relative;
+  background-color: white;
+  border: 1px solid rgba(219, 219, 219, 0.562);
+}
+main #story .box .topLeft {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 5;
+}
+main #story .box .topRight {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 5;
+}
+main #story .box .bottomRight {
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: 5;
+}
+main #story .box .bottomLeft {
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: 5;
+}
+main #story .box h2 {
+  display: inline-block;
+  margin: 0 auto;
+  z-index: 5;
+}
+main #story .box .textMain {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+main #story .box .textMain .boxText {
+  margin: 50px;
+  width: 50%;
+}
+main #story .box .menu {
+  font-size: xx-large;
+  margin-bottom: 300px;
+}
+main #story .box .menu .colonneGauche {
+  width: 20%;
+  border-right: black 1px solid;
+}
+main #story .box .menu .colonneGauche .icons {
+  width: 100%;
+  margin: 5px 0;
+}
+main #story .box .menu .colonneGauche .icons i {
+  color: rgba(167, 163, 163, 0.637);
+}
+main #story .box .menu .colonneGauche .icons:hover {
+  border-right: 4px solid #C42D40;
+}
+main #story .box .menu .colonneGauche .icons:hover i {
+  color: #C42D40;
+}
+main #story .box .menu .colonneDroite {
+  width: 40%;
+  border: black 1px solid;
 }
 
 .myUppercase {
   text-transform: uppercase;
+}
+
+.myDarkRedColor {
+  color: #AF2839;
+}
+
+.myDarkRedBg {
+  background-color: #AF2839;
+}
+
+.myRed {
+  color: #C42D40;
+}
+
+.myFont1 {
+  font-family: "Courgette", cursive;
+}
+
+.bigWords {
+  font-size: 1.25em;
+}
+
+.middleWords {
+  font-size: 1.4em;
+}
+
+.myFilter {
+  filter: brightness(20%);
+}
+
+.myFsIcon {
+  font-size: 50px;
 }
 
 /*# sourceMappingURL=style.css.map */

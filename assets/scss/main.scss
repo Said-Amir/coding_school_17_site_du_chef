@@ -1,0 +1,74 @@
+// ************* Style Main
+
+main{
+    #story{
+        background-image: url('../img/main_bg.jpg');
+        .box{
+            position: relative;
+            background-color: white;
+            border: 1px solid rgba(219, 219, 219, 0.562);
+            .topLeft{
+                position: absolute;
+                left: 0;
+                top: 0;
+                z-index: 5;
+            }
+            .topRight{
+                position: absolute;
+                top: 0;
+                right: 0;
+                z-index: 5;
+            }
+            .bottomRight{
+                right: 0;
+                bottom: 0;
+                position: absolute;
+                z-index: 5;
+            }
+            .bottomLeft{
+                left: 0;
+                bottom: 0;
+                position: absolute;
+                z-index: 5;
+            }
+            h2{
+                display: inline-block;
+                margin: 0 auto;
+                z-index: 5;
+            }
+            .textMain{
+                margin-top: 50px;
+                margin-bottom: 50px;
+                .boxText{
+                    margin: 50px;
+                    width: 50%;
+                }
+            }
+            .menu{
+                font-size: xx-large;
+                margin-bottom: 300px;
+                .colonneGauche{
+                    width: 20%;
+                    border-right: black 1px solid;
+                    .icons{
+                        width: 100%;
+                        margin: 5px 0;
+                        i{
+                            color: rgba(167, 163, 163, 0.637);
+                        }
+                    }
+                    .icons:hover{
+                        border-right: 4px solid $myRed;
+                    }
+                    .icons:hover i{
+                        color: $myRed;
+                    }
+                }
+                .colonneDroite{
+                    width: 40%;
+                    border: black 1px solid;
+                }
+            }
+        }
+    }
+}

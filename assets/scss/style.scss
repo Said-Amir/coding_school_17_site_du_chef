@@ -4,13 +4,43 @@
 @import "./header.scss";
 @import "./footer.scss";
 @import "./main.scss";
+@import "./_media.scss";
 
 
 
 // *****************GENERAL******************
 
 // les textes en majuscules
+
 .myUppercase{
     text-transform: uppercase;
 }
 
+.myDarkRedColor{
+    color: $myDarkRed;
+}
+
+.myDarkRedBg{
+    background-color: $myDarkRed;
+}
+.myRed{
+    color: $myRed;
+}
+.myFont1{
+    font-family: 'Courgette', cursive;
+}
+.bigWords{
+    font-size: 1.25em;
+}
+
+.middleWords{
+    font-size: 1.4em;
+}
+
+.myFilter{
+    filter: brightness(20%);
+}
+
+.myFsIcon{
+    font-size: 50px;
+}

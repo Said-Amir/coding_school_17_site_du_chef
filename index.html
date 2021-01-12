@@ -7,9 +7,13 @@
     
     <!-- Bootstrap -->
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
-  
+    
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+
     <!-- Fontawesome -->
-    <link rel="stylesheet" type="text/css" href="">
+    <link rel="stylesheet" type="text/css" href="./node_modules/@fortawesome/fontawesome-free/css/all.css">
   
     <!-- Styles personnalisés -->
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
@@ -18,47 +22,135 @@
 <body>
     <!-- Début du Header-->
     <header>
-        <!-- NavBar -->
-        <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-dark">
-                <!-- partie Gauche navbar -->
-                <div class="container-fluid col-5.5 ">
-                    <div class="collapse navbar-collapse d-flex justify-content-between border-top border-bottom border-1" id="navbarNavAltMarkup">
-                        <a class="nav-link text-white p-3 myUppercase " href="#">Home</a>
-                        <a class="nav-link text-white p-3 myUppercase " href="#">About us</a>
-                        <a class="nav-link text-white p-3 myUppercase " href="#">menu list</a>
-                        <a class="nav-link text-white p-3 myUppercase " href="#">team</a>
-                    </div>
-                </div>
-                <!-- fin partie gauche -->
+        
+        <!-- Carousel -->
 
-                <!-- logo -->
-                <div class="col-1 d-flex justify-content-center mx-3">
-                    <img src="./assets/img/logo.png" alt="">
+        <div id="carouselExampleIndicators" class="carousel slide myCarousel" data-bs-ride="carousel">
+            <ol class="myCarousel-indicators">
+              <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active myIndicators"><i class="far fa-dot-circle"></i></li>
+              <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="myIndicators"><i class="fas fa-circle"></i></li>
+              <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="myIndicators"><i class="fas fa-circle"></i></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active divHeight">
+                <div>
+                    <img src="./assets/img/banner1.jpg" class="d-block w-100 heightImg myBorder myFilter" alt="...">
+                    
                 </div>
-                <!-- fin logo -->
+              </div>
+              <div class="carousel-item ">
+                <img src="./assets/img/banner1.jpg" class="d-block w-100 heightImg myFilter" alt="...">
+              </div>
+              <div class="carousel-item myFilter">
+                <img src="./assets/img/banner1.jpg" class="d-block w-100 heightImg myFilter" alt="...">
+              </div>
+            </div>
+            
+          </div>
 
-                <!-- partie droite navbar -->
-                <div class="container-fluid col-5.5 ">
-                    <div class="collapse navbar-collapse d-flex justify-content-between border-top border-bottom border-1" id="navbarNavAltMarkup">
-                        <a class="nav-link text-white p-3 myUppercase" href="#">reservation</a>
-                        <a class="nav-link text-white p-3 myUppercase" href="#">blog</a>
-                        <a class="nav-link text-white p-3 myUppercase" href="#">testimonials</a>
-                        <a class="nav-link text-white p-3 myUppercase" href="#">contact us</a>
-                    </div>
-                </div>
-                <!-- fin partie droite -->
-            </nav>
-        </div>
-        <!-- Nav de la NavBar -->
-        <div class="decoBottom">
+        <!-- fin Carousel -->
+
+
+        <!-- NavBar Desktop -->
+        
+        
+        <nav class="d-flex justify-content-center myNavBar pt-4 bigScreen">
+
+            <ul class="d-flex justify-content-between text-white myUppercase hedi">
+
+                <li><a href="#">home</a></li>
+                <li><a href="#">about us</a></li>
+                <li><a href="#">menu list</a></li>
+                <li><a href="#">team</a></li>
+
+            </ul>
+
+            <img src="./assets/img/logo.png" alt="">
+
+            <ul class="d-flex text-white justify-content-between myUppercase">
+
+                <li><a href="#">reservation</a></li>
+                <li><a href="#">blog</a></li>
+                <li><a href="#">testimonials</a></li>
+                <li><a href="#">contact us</a></li>
+
+            </ul>
+
+        </nav>
+
+        <!-- fin de la NavBar Desktop -->
+
+        <!-- main Header -->
+
+        <div class="container d-flex flex-column align-items-center justify-content-center myText text-white">
+            <h2 class="myFont1">Whatever you <span class="myUppercase bigWords">Occasion</span>,</h2>
+            <h2 class="myFont1"><span class="myUppercase bigWords myRed">taste</span> <span class="middleWords">makes</span> it one</h2> 
+            <h2 class="myFont1">to <span class="middleWords">remember</span>!</h2>
+            <div class="myUppercase">
+                <a href="#" class="leftBtn text-dark">purchase theme</a>
+                <a href="#" class="rightBtn">Learn more</a>
+            </div>
             
         </div>
+        
+        <!-- fin main Header -->
+
+
+        <!-- deco Bottom -->
+        
+        <div class="decoBottom"></div>
+
+        <!-- fin deco Bottom -->
     </header>
     <!-- Fin du Header -->
 
     <!-- Début du Main-->
+
     <main>
+
+        <section id="story">
+          <div class="container box">
+            <img src="./assets/img/box-left-top.png" alt="" class="topLeft">
+            <img src="./assets/img/box-right-top.png" alt="" class="topRight">
+            <img src="./assets/img/box-bottom_right.png" alt="" class="bottomRight">
+            <img src="./assets/img/box-bottom-left.png" alt="" class="bottomLeft">
+            <div class="container d-flex flex-column align-items-center textMain">
+              <div class="d-flex flex-column align-items-center">
+                <h2 class="myFont1"><span class="myUppercase myDarkRedColor">Our</span> Story</h2>
+                <img src="./assets/img/decoration_line.png" alt="">
+              </div>
+              <div class="boxText text-center">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et sed perspiciatis atque, dolorum minus commodi alias magnam odit recusandae eaque soluta adipisci labore aspernatur reprehenderit? Maxime, dicta, optio autem saepe, quos fugit rerum voluptates tenetur iusto repudiandae maiores deserunt culpa molestias ipsam inventore esse totam facere quod nulla? Ex, esse? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero, fugit.</p>
+              </div>
+              <div class="d-flex flex-column align-items-center">
+                <h2 class="myFont1"><span class="myUppercase myDarkRedColor myFont1">Our</span> Menu List</h2>
+                <img src="./assets/img/decoration_line.png" alt="">
+              </div>
+            </div>
+            <div class="container-fluid menu d-flex">
+              <div class="d-flex flex-column colonneGauche align-items-center">
+                <div class="d-flex flex-column align-items-center border-bottom myFont1 icons">
+                  <i class="fas fa-mug-hot myFsIcon"></i>
+                  <span>BreakFast</span>
+                </div>
+                <div class="d-flex flex-column align-items-center border-bottom myFont1 icons">
+                  <i class="fas fa-mug-hot myFsIcon"></i>
+                  <span>Lunch</span>
+                </div>
+                <div class="d-flex flex-column align-items-center border-bottom myFont1 icons">
+                  <i class="fas fa-mug-hot myFsIcon"></i>
+                  <span>Snacks</span>
+                </div>
+                <div class="d-flex flex-column align-items-center border-bottom myFont1 icons">
+                  <i class="fas fa-mug-hot myFsIcon"></i>
+                  <span>Dinner</span>
+                </div>
+              </div>
+              <div class="d-flex flex-column colonneDroite"></div>
+              <div class="d-flex flex-column colonneDroite"></div>
+            </div>
+          </div>
+        </section>
 
     </main>
     <!-- Fin du Main-->
