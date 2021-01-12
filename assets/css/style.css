@@ -1,12 +1,12 @@
 header {
-  height: 100vh;
   width: 100%;
+  position: relative;
+  min-height: 100vh;
 }
 header .myCarousel {
   position: absolute;
   z-index: -2;
   width: 100%;
-  height: 100vh;
 }
 header .myCarousel .myCarousel-indicators {
   position: absolute;
@@ -27,7 +27,6 @@ header .myCarousel .myCarousel-indicators .myIndicators {
 }
 header .myCarousel div .divHeight {
   width: 100%;
-  height: 98vh;
 }
 header .myNavBar {
   align-items: center;
@@ -84,85 +83,125 @@ header .myText div .leftBtn {
 header .myText div .rightBtn {
   background-color: #AF2839;
 }
-
-.decoBottom {
-  height: 2px;
+header .decoBottom {
+  height: 10px;
   position: absolute;
-  z-index: 3;
+  z-index: 999;
   width: 100%;
   background-image: url("../img/bottom_decoration_img.png");
-  top: 95.5vh;
+  background-repeat: repeat-x;
+  bottom: 28px;
 }
 
-main #story {
-  background-image: url("../img/main_bg.jpg");
+main #menu {
+  padding: 35px 0;
 }
-main #story .box {
+main #menu .box {
   position: relative;
   background-color: white;
   border: 1px solid rgba(219, 219, 219, 0.562);
 }
-main #story .box .topLeft {
+main #menu .box .topLeft {
   position: absolute;
   left: 0;
   top: 0;
   z-index: 5;
 }
-main #story .box .topRight {
+main #menu .box .topRight {
   position: absolute;
   top: 0;
   right: 0;
   z-index: 5;
 }
-main #story .box .bottomRight {
+main #menu .box .bottomRight {
   right: 0;
   bottom: 0;
   position: absolute;
   z-index: 5;
 }
-main #story .box .bottomLeft {
+main #menu .box .bottomLeft {
   left: 0;
   bottom: 0;
   position: absolute;
   z-index: 5;
 }
-main #story .box h2 {
+main #menu .box h2 {
   display: inline-block;
   margin: 0 auto;
   z-index: 5;
 }
-main #story .box .textMain {
+main #menu .box .textMain {
   margin-top: 50px;
   margin-bottom: 50px;
 }
-main #story .box .textMain .boxText {
+main #menu .box .textMain .boxText {
   margin: 50px;
   width: 50%;
 }
-main #story .box .menu {
+main #menu .box .menu {
   font-size: xx-large;
-  margin-bottom: 300px;
+  margin-bottom: 60px;
 }
-main #story .box .menu .colonneGauche {
+main #menu .box .menu .colonneGauche {
   width: 20%;
-  border-right: black 1px solid;
+  border-right: rgba(194, 192, 192, 0.637) 1px solid;
 }
-main #story .box .menu .colonneGauche .icons {
+main #menu .box .menu .colonneGauche .icons {
   width: 100%;
-  margin: 5px 0;
+  margin: 14px 0;
 }
-main #story .box .menu .colonneGauche .icons i {
+main #menu .box .menu .colonneGauche .icons i {
   color: rgba(167, 163, 163, 0.637);
 }
-main #story .box .menu .colonneGauche .icons:hover {
-  border-right: 4px solid #C42D40;
+main #menu .box .menu .colonneGauche .icons:hover {
+  border-right: 5px solid #C42D40;
 }
-main #story .box .menu .colonneGauche .icons:hover i {
+main #menu .box .menu .colonneGauche .icons:hover i {
   color: #C42D40;
 }
-main #story .box .menu .colonneDroite {
+main #menu .box .menu .colonneDroite {
   width: 40%;
-  border: black 1px solid;
+  margin: 0 15px;
+}
+main #menu .box .menu .prix .euros25 {
+  width: 100%;
+  border-bottom: 1px rgba(194, 192, 192, 0.637) dashed;
+  margin: 15px 0;
+}
+main #menu .box .menu .prix .euros25 img {
+  width: 100px;
+  border-radius: 50%;
+  border: rgba(194, 192, 192, 0.637) solid 5px;
+}
+main #menu .box .menu .prix .euros25 .textPrix {
+  font-size: 15px;
+  width: 55%;
+}
+main #menu .box .menu .prix .euros25 .textPrix span {
+  display: block;
+}
+main #menu .box .menu .prix .euros25 .font25 {
+  font-size: 20px;
+  font-weight: 600;
+  padding: 0 8px;
+  background-color: #EFEFEF;
+}
+main #menu .box .spaceLine {
+  margin-bottom: 60px;
+}
+main #ourChefs {
+  background-color: black;
+  background-image: url("../img/team_background.jpg");
+  background-size: 900%;
+  position: 48% 42%;
+  padding: 50px 0;
+}
+main #ourChefs .titreOurChef {
+  padding: 50px;
+}
+
+body {
+  background-image: url("../img/main_bg.jpg");
 }
 
 .myUppercase {

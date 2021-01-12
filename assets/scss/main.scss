@@ -1,8 +1,11 @@
-// ************* Style Main
+// ************* Style Main**********************************
 
 main{
-    #story{
-        background-image: url('../img/main_bg.jpg');
+
+    // ****************** Style section Menu ********************** 
+    #menu{
+        
+        padding: 35px 0;
         .box{
             position: relative;
             background-color: white;
@@ -46,19 +49,19 @@ main{
             }
             .menu{
                 font-size: xx-large;
-                margin-bottom: 300px;
+                margin-bottom: 60px;
                 .colonneGauche{
                     width: 20%;
-                    border-right: black 1px solid;
+                    border-right: rgba(194, 192, 192, 0.637) 1px solid;
                     .icons{
                         width: 100%;
-                        margin: 5px 0;
+                        margin: 14px 0;
                         i{
                             color: rgba(167, 163, 163, 0.637);
                         }
                     }
                     .icons:hover{
-                        border-right: 4px solid $myRed;
+                        border-right: 5px solid $myRed;
                     }
                     .icons:hover i{
                         color: $myRed;
@@ -66,9 +69,54 @@ main{
                 }
                 .colonneDroite{
                     width: 40%;
-                    border: black 1px solid;
+                    margin: 0 15px;
                 }
+                .prix{
+                    .euros25{
+                        width: 100%;
+                        border-bottom: 1px rgba(194, 192, 192, 0.637) dashed;
+                        margin: 15px 0;
+                        img{
+                            width: 100px;
+                            border-radius: 50%;
+                            border: rgba(194, 192, 192, 0.637) solid 5px;
+                        }
+                        .textPrix{
+                            font-size: 15px;
+                            width: 55%;
+                            span{
+                                display: block;
+                            }
+                        }
+                        .font25{
+                            font-size: 20px;
+                            font-weight: 600;
+                            padding: 0 8px;
+                            background-color: #EFEFEF;
+                        }
+                    }
+                }
+            }
+            .spaceLine{
+                margin-bottom: 60px;
             }
         }
     }
+
+    // *********************** Fin style section menu *******************
+
+    // *********************** Debut style section Chefs ****************
+
+    #ourChefs{
+        background-color: black;
+        background-image: url('../img/team_background.jpg');
+        background-size: 900%;
+        position: 48% 42%;
+        padding: 50px 0;
+        .titreOurChef{
+            padding: 50px;
+        }
+    }
+
+    // ************************ Fin style section Chefs *****************
 }

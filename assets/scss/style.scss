@@ -11,7 +11,9 @@
 // *****************GENERAL******************
 
 // les textes en majuscules
-
+body{
+    background-image: url('../img/main_bg.jpg');
+}
 .myUppercase{
     text-transform: uppercase;
 }
