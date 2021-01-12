@@ -21,29 +21,23 @@
 </head>
 <body>
     <!-- Début du Header-->
+
+    
+
     <header>
         
         <!-- Carousel -->
 
         <div id="carouselExampleIndicators" class="carousel slide myCarousel" data-bs-ride="carousel">
             <ol class="myCarousel-indicators">
-              <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active myIndicators"><i class="far fa-dot-circle"></i></li>
-              <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="myIndicators"><i class="fas fa-circle"></i></li>
-              <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="myIndicators"><i class="fas fa-circle"></i></li>
+              <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+              <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class=""></li>
+              <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class=""></li>
             </ol>
-            <div class="carousel-inner">
-              <div class="carousel-item active divHeight">
-                <div>
-                    <img src="./assets/img/banner1.jpg" class="d-block w-100 heightImg myBorder myFilter" alt="...">
-                    
-                </div>
-              </div>
-              <div class="carousel-item ">
-                <img src="./assets/img/banner1.jpg" class="d-block w-100 heightImg myFilter" alt="...">
-              </div>
-              <div class="carousel-item myFilter">
-                <img src="./assets/img/banner1.jpg" class="d-block w-100 heightImg myFilter" alt="...">
-              </div>
+            <div class="carousel-inner bgCarousel">
+              <div class="carousel-item active myFilter bgImgCarousel"></div>
+              <div class="carousel-item myFilter bgImgCarousel"></div>
+              <div class="carousel-item myFilter bgImgCarousel"></div>
             </div>
             
           </div>
@@ -54,35 +48,57 @@
         <!-- NavBar Desktop -->
         
         
-        <nav class="d-flex justify-content-center myNavBar pt-4 bigScreen">
+        <nav class="myNavBar navbar navbar-dark navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+            <img src="./assets/img/logo.png" alt="" class="imgPhone d-none">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse d-flex justify-content-center align-items-center" id="navbarSupportedContent">
+              <ul>
 
-            <ul class="d-flex justify-content-between text-white myUppercase hedi">
+                  <li class="nav-item myUppercase">
+                    <a class="nav-link" href="#">home</a>
+                  </li>
+                  <li class="nav-item myUppercase">
+                    <a class="nav-link" href="#">about us</a>
+                  </li>
+                  <li class="nav-item myUppercase">
+                    <a class="nav-link" href="#">menu list</a>
+                  </li>
+                  <li class="nav-item myUppercase">
+                    <a class="nav-link" href="#">team</a>
+                  </li>
 
-                <li><a href="#">home</a></li>
-                <li><a href="#">about us</a></li>
-                <li><a href="#">menu list</a></li>
-                <li><a href="#">team</a></li>
+              </ul>
 
-            </ul>
+              <img src="./assets/img/logo.png" alt="">
 
-            <img src="./assets/img/logo.png" alt="">
+              <ul class="d-flex text-white justify-content-between myUppercase">
 
-            <ul class="d-flex text-white justify-content-between myUppercase">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">reservation</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">blog</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">testimonials</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">contact us</a>
+                  </li>
 
-                <li><a href="#">reservation</a></li>
-                <li><a href="#">blog</a></li>
-                <li><a href="#">testimonials</a></li>
-                <li><a href="#">contact us</a></li>
-
-            </ul>
-
+              </ul>
+            </div>
+          </div>
         </nav>
 
         <!-- fin de la NavBar Desktop -->
 
         <!-- main Header -->
 
-        <div class="container d-flex flex-column align-items-center justify-content-center myText text-white">
+        <div class="container d-flex flex-column align-items-center justify-content-center myText text-white d-none">
             <h2 class="myFont1">Whatever you <span class="myUppercase bigWords">Occasion</span>,</h2>
             <h2 class="myFont1"><span class="myUppercase bigWords myRed">taste</span> <span class="middleWords">makes</span> it one</h2> 
             <h2 class="myFont1">to <span class="middleWords">remember</span>!</h2>
@@ -90,7 +106,16 @@
                 <a href="#" class="leftBtn text-dark">purchase theme</a>
                 <a href="#" class="rightBtn">Learn more</a>
             </div>
-            
+        </div>
+
+        <div class="myText pt-5">
+          <div class="pt-5 myFont1 text-white">
+              <h1>Whatever you <span class="myUppercase">Occasion</span>, <span class="titreStyle">taste</span>  makes it one to remember!</h1>
+          </div>
+          <div class="text-center pt-5 ">
+              <button class="btn bouton1">Purchase theme</button>
+              <button class="btn bouton2">Learn more</button>
+          </div>            
         </div>
         
         <!-- fin main Header -->
@@ -110,7 +135,7 @@
 
 
       <!-- Debut premiere section -->
-        <section id="menu">
+        <section id="menus">
           <!-- Container pour délimiter le corps de la section + 4 images coins -->
           <div class="container box">
             <img src="./assets/img/box-left-top.png" alt="" class="topLeft">
@@ -136,10 +161,10 @@
             <!-- fin Partie Texte de la section + Titres -->
 
             <!-- MENU -->
-            <div class="container-fluid menu d-flex">
+            <div class="container-fluid menu d-flex justify-content-between">
 
               <!-- Colonne de gauche ( Icones ) -->
-              <div class="d-flex flex-column colonneGauche align-items-center">
+              <div class="col-md-2 p-0 m-0 d-flex flex-column colonneGauche align-items-center">
                 <div class="d-flex flex-column align-items-center border-bottom myFont1 icons">
                   <i class="fas fa-mug-hot myFsIcon"></i>
                   <span>BreakFast</span>
@@ -322,16 +347,85 @@
         <img src="./assets/img/box-bottom-left-grey.png" alt="" class="bottomLeft">
         <!-- Fin Coins -->
 
-      <div class="container d-flex flex-column align-items-center">
+        <div class="container d-flex flex-column align-items-center littleBox justify-content-around">
 
-        <!-- Titre -->
-        <div class="d-flex flex-column align-items-center titreOurChef">
-          <h2 class="myFont1"><span class="myUppercase myDarkRedColor">Book</span> your table</h2>
-          <img src="./assets/img/decoration_line.png" alt="">
+          <!-- Titre -->
+          <div class="d-flex flex-column align-items-center titreOurChef my-5">
+            <h2 class="myFont1"><span class="myUppercase myDarkRedColor">Book</span> your table</h2>
+            <img src="./assets/img/decoration_line.png" alt="">
+          </div>
+          <!-- fin titre -->
+
+          <!-- form -->
+
+          <div class="form d-flex flex-column align-items-center justify-content-around">
+            <span class="text-white my-5">For any query please call us at: <span class="fs-2">+91-1234567890</span></span>
+            <div class="container-fluid d-flex justify-content-center" style="width: 80%;">
+              <div class="d-flex flex-column align-items-center mx-3" style="width: 50%;">
+                <input class="form-control mb-3 myBorderForm" type="text" placeholder="Enter Full Name" aria-label="default input example">
+                <input class="form-control mb-3 myBorderForm" type="text" placeholder="PhoneNumber" aria-label="default input example">
+                <input class="form-control mb-3 myBorderForm" type="text" placeholder="Date" aria-label="default input example">
+                <select class="form-select mb-3 myBorderForm" aria-label="Default select example">
+                  <option selected>Occasion</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+              <div class="d-flex flex-column align-items-center mx-3" style="width: 50%;">
+                <input class="form-control mb-3 myBorderForm" type="text" placeholder="Enter Id" aria-label="default input example">
+                <select class="form-select mb-3 myBorderForm" aria-label="Default select example">
+                  <option selected>No Of Person</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+                <input class="form-control mb-3 myBorderForm" type="text" placeholder="Time" aria-label="default input example">
+                <select class="form-select mb-3 myBorderForm" aria-label="Default select example">
+                  <option selected>Cuisine</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+              
+              
+            </div>
+            <a class="btn myRedBg text-white rounded-pill px-4 py-3 my-5" href="#" role="button">BOOK NOW</a>
+          </div>
+          <div class="d-flex flex-column align-items-center titreOurChef my-5">
+            <h2 class="myFont1"><span class="myUppercase myDarkRedColor">Our</span> Blog</h2>
+            <img src="./assets/img/decoration_line.png" alt="">
+          </div>
+          <!-- fin form -->
+
+          <div class="container d-flex justify-content-around blogItem my-5">
+            <div class="d-flex align-items-center">
+              <div class="d-flex flex-column align-items-center">
+                <div class="d-flex">
+                  <img src="./assets/img/blog_img1.jpg" alt="">
+                  <div class="textBlog">
+                    <span class="likes ptBtn">12 April 2017/ 20 Comment/ 35 Likes</span>
+                    <h4 class="my-3">Lorem Ipsum</h4>
+                    <span>Lorem Ipsum is simply dummy text  of the printing and typesetting industry.</span>
+                  </div>
+                </div>
+              </div>
+
+            <div class="d-flex flex-column align-items-center">
+              <div class="d-flex">
+                <img src="./assets/img/blog_img1.jpg" alt="">
+                <div class="textBlog">
+                  <span class="likes ptBtn">12 April 2017/ 20 Comment/ 35 Likes</span>
+                  <h4 class="my-3">Lorem Ipsum</h4>
+                  <span>Lorem Ipsum is simply dummy text  of the printing and typesetting industry.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
-        <!-- fin titre -->
-      </div>
-
+        
       </div>
   </section>
     <!-- Fin 3eme section  -->
@@ -344,6 +438,9 @@
     </footer>
     <!-- Fin du Footer-->
 
-    
+    <!-- Jquery -->
+    <script src="./node_modules/jquery/dist/jquery.js"></script>
+    <!-- Bootstrap js -->
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
 </body>
 </html>

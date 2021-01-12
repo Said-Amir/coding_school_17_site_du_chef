@@ -1,35 +1,28 @@
 header {
-  width: 100%;
   position: relative;
-  min-height: 100vh;
+  position: center;
+  height: 97vh;
 }
 header .myCarousel {
   position: absolute;
   z-index: -2;
-  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
-header .myCarousel .myCarousel-indicators {
-  position: absolute;
-  right: 0;
-  bottom: 20px;
-  left: 0;
-  z-index: 2;
-  display: flex;
-  justify-content: center;
-  padding-left: 0;
-  margin-right: 15%;
-  margin-left: 15%;
-  list-style: none;
+header .myCarousel .bgCarousel {
+  height: 100%;
+  filter: brightness(90%);
 }
-header .myCarousel .myCarousel-indicators .myIndicators {
-  color: rgba(255, 255, 255, 0.699);
-  margin: 0 3px;
-}
-header .myCarousel div .divHeight {
-  width: 100%;
+header .myCarousel .bgCarousel .bgImgCarousel {
+  background-image: url("../img/banner1.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 98.9vw;
+  height: 100%;
 }
 header .myNavBar {
-  align-items: center;
+  background-color: transparent !important;
+  padding: 30px 0 0 0;
 }
 header .myNavBar ul {
   list-style: none;
@@ -43,45 +36,47 @@ header .myNavBar ul {
 header .myNavBar ul li {
   display: flex;
   align-items: center;
-  padding: 14px 30px;
+  padding: 8px 12px;
   margin: 0;
 }
 header .myNavBar ul li a {
   text-decoration: none;
   color: white;
-  font-size: 0.9em;
-  padding: 0;
-  margin: 0;
+  font-size: 13px;
 }
 header .myNavBar ul :hover {
   background-color: #C42D40;
 }
 header .myNavBar img {
-  margin: 0 4vw;
+  margin: 0 50px;
 }
 header .myText {
-  margin-top: 120px;
+  position: absolute;
+  font-size: 25px;
+  z-index: 2;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
 }
-header .myText h2 {
-  font-size: 3.5em;
-  margin: 0;
+header .myText div h1 .titreStyle {
+  color: #c43540;
+  text-transform: uppercase;
+  font-size: 1.5em;
 }
-header .myText div {
-  margin-top: 65px;
+header .myText div .bouton1 {
+  background-color: #e4e4e4;
+  color: black;
+  border-radius: 50px;
+  margin-right: 10px;
+  padding: 15px 30px;
 }
-header .myText div a {
-  text-decoration: none;
+header .myText div .bouton2 {
+  background-color: #c43540;
   color: white;
-  padding: 15px 25px;
-  border-radius: 25px;
-  font-size: 0.95em;
-  margin: 0 12px;
-}
-header .myText div .leftBtn {
-  background-color: white;
-}
-header .myText div .rightBtn {
-  background-color: #AF2839;
+  border-radius: 50px;
+  margin-left: 10px;
+  padding: 15px 30px;
 }
 header .decoBottom {
   height: 10px;
@@ -90,103 +85,103 @@ header .decoBottom {
   width: 100%;
   background-image: url("../img/bottom_decoration_img.png");
   background-repeat: repeat-x;
-  bottom: 28px;
+  bottom: 0;
 }
 
-main #menu {
+main #menus {
   padding: 35px 0;
 }
-main #menu .box {
+main #menus .box {
   position: relative;
   background-color: white;
   border: 1px solid rgba(219, 219, 219, 0.562);
 }
-main #menu .box .topLeft {
+main #menus .box .topLeft {
   position: absolute;
   left: 0;
   top: 0;
   z-index: 5;
 }
-main #menu .box .topRight {
+main #menus .box .topRight {
   position: absolute;
   top: 0;
   right: 0;
   z-index: 5;
 }
-main #menu .box .bottomRight {
+main #menus .box .bottomRight {
   right: 0;
   bottom: 0;
   position: absolute;
   z-index: 5;
 }
-main #menu .box .bottomLeft {
+main #menus .box .bottomLeft {
   left: 0;
   bottom: 0;
   position: absolute;
   z-index: 5;
 }
-main #menu .box h2 {
+main #menus .box h2 {
   display: inline-block;
   margin: 0 auto;
   z-index: 5;
 }
-main #menu .box .textMain {
+main #menus .box .textMain {
   margin-top: 50px;
   margin-bottom: 50px;
 }
-main #menu .box .textMain .boxText {
+main #menus .box .textMain .boxText {
   margin: 50px;
   width: 50%;
 }
-main #menu .box .menu {
+main #menus .box .menu {
   font-size: xx-large;
   margin-bottom: 60px;
 }
-main #menu .box .menu .colonneGauche {
+main #menus .box .menu .colonneGauche {
   width: 20%;
   border-right: rgba(194, 192, 192, 0.637) 1px solid;
 }
-main #menu .box .menu .colonneGauche .icons {
+main #menus .box .menu .colonneGauche .icons {
   width: 100%;
   margin: 14px 0;
 }
-main #menu .box .menu .colonneGauche .icons i {
+main #menus .box .menu .colonneGauche .icons i {
   color: rgba(167, 163, 163, 0.637);
 }
-main #menu .box .menu .colonneGauche .icons:hover {
+main #menus .box .menu .colonneGauche .icons:hover {
   border-right: 5px solid #C42D40;
 }
-main #menu .box .menu .colonneGauche .icons:hover i {
+main #menus .box .menu .colonneGauche .icons:hover i {
   color: #C42D40;
 }
-main #menu .box .menu .colonneDroite {
+main #menus .box .menu .colonneDroite {
   width: 40%;
   margin: 0 15px;
 }
-main #menu .box .menu .prix .euros25 {
+main #menus .box .menu .prix .euros25 {
   width: 100%;
   border-bottom: 1px rgba(194, 192, 192, 0.637) dashed;
   margin: 15px 0;
 }
-main #menu .box .menu .prix .euros25 img {
+main #menus .box .menu .prix .euros25 img {
   width: 100px;
   border-radius: 50%;
   border: rgba(194, 192, 192, 0.637) solid 5px;
 }
-main #menu .box .menu .prix .euros25 .textPrix {
+main #menus .box .menu .prix .euros25 .textPrix {
   font-size: 15px;
   width: 55%;
 }
-main #menu .box .menu .prix .euros25 .textPrix span {
+main #menus .box .menu .prix .euros25 .textPrix span {
   display: block;
 }
-main #menu .box .menu .prix .euros25 .font25 {
+main #menus .box .menu .prix .euros25 .font25 {
   font-size: 20px;
   font-weight: 600;
   padding: 0 8px;
   background-color: #EFEFEF;
 }
-main #menu .box .spaceLine {
+main #menus .box .spaceLine {
   margin-bottom: 60px;
 }
 main #ourChefs {
@@ -203,7 +198,6 @@ main #book {
   padding: 35px 0;
 }
 main #book .box {
-  height: 800px;
   position: relative;
   background-color: white;
   border: 1px solid rgba(219, 219, 219, 0.562);
@@ -232,6 +226,38 @@ main #book .box .bottomLeft {
   position: absolute;
   z-index: 5;
 }
+main #book .box .littleBox .form {
+  background-image: url("../img/book_table_bg.jpg");
+  width: 70%;
+  border-radius: 15px;
+}
+main #book .box .littleBox .form div .myBorderForm {
+  border-radius: 10px;
+  width: 100%;
+  padding: 10px;
+  padding-right: 35px;
+}
+main #book .box .blogItem div div {
+  position: relative;
+}
+main #book .box .blogItem div div img {
+  width: 90%;
+  border-radius: 10px;
+  border: rgba(219, 217, 217, 0.637) solid 5px;
+  margin: 0 auto;
+}
+main #book .box .blogItem div div .textBlog {
+  position: absolute;
+  bottom: -52%;
+  left: 9%;
+}
+main #book .box .blogItem div div .textBlog .ptBtn {
+  background-color: #C42D40;
+  color: white;
+  font-size: 20px;
+  padding: 10px 10px;
+  border-radius: 10px;
+}
 
 body {
   background-image: url("../img/main_bg.jpg");
@@ -253,6 +279,10 @@ body {
   color: #C42D40;
 }
 
+.myRedBg {
+  background-color: #C42D40;
+}
+
 .myFont1 {
   font-family: "Courgette", cursive;
 }
@@ -271,6 +301,12 @@ body {
 
 .myFsIcon {
   font-size: 50px;
+}
+
+@media screen and (max-width: 1200px) {
+  .menu {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

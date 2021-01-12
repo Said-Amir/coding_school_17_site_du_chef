@@ -8,7 +8,7 @@
 
 
 
-// *****************GENERAL******************
+// ***************** GENERAL ******************
 
 // les textes en majuscules
 body{
@@ -28,6 +28,9 @@ body{
 .myRed{
     color: $myRed;
 }
+.myRedBg{
+    background-color: $myRed;
+}
 .myFont1{
     font-family: 'Courgette', cursive;
 }
@@ -45,4 +48,13 @@ body{
 
 .myFsIcon{
     font-size: 50px;
+}
+
+
+// *************** MEDIA QUERIES *****************
+
+@media screen and (max-width: 1200px) {
+    .menu{
+        display: none;
+    }
 }
