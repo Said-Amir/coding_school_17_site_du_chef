@@ -199,6 +199,39 @@ main #ourChefs {
 main #ourChefs .titreOurChef {
   padding: 50px;
 }
+main #book {
+  padding: 35px 0;
+}
+main #book .box {
+  height: 800px;
+  position: relative;
+  background-color: white;
+  border: 1px solid rgba(219, 219, 219, 0.562);
+}
+main #book .box .topLeft {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 5;
+}
+main #book .box .topRight {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 5;
+}
+main #book .box .bottomRight {
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: 5;
+}
+main #book .box .bottomLeft {
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: 5;
+}
 
 body {
   background-image: url("../img/main_bg.jpg");

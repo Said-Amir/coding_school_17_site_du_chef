@@ -4,7 +4,6 @@ main{
 
     // ****************** Style section Menu ********************** 
     #menu{
-        
         padding: 35px 0;
         .box{
             position: relative;
@@ -119,4 +118,42 @@ main{
     }
 
     // ************************ Fin style section Chefs *****************
+
+    // *********************** Debut style section Book ****************
+
+    #book{
+        padding: 35px 0;
+        .box{
+            height: 800px;
+            position: relative;
+            background-color: white;
+            border: 1px solid rgba(219, 219, 219, 0.562);
+            .topLeft{
+                position: absolute;
+                left: 0;
+                top: 0;
+                z-index: 5;
+            }
+            .topRight{
+                position: absolute;
+                top: 0;
+                right: 0;
+                z-index: 5;
+            }
+            .bottomRight{
+                right: 0;
+                bottom: 0;
+                position: absolute;
+                z-index: 5;
+            }
+            .bottomLeft{
+                left: 0;
+                bottom: 0;
+                position: absolute;
+                z-index: 5;
+            }
+        }
+
+    // ************************ Fin style section Book *****************
+    }
 }
