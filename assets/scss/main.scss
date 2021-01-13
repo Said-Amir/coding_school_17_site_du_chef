@@ -9,6 +9,9 @@ main{
             position: relative;
             background-color: white;
             border: 1px solid rgba(219, 219, 219, 0.562);
+            display: flex;
+            align-items: center;
+            flex-direction: column;
             .topLeft{
                 position: absolute;
                 left: 0;
@@ -33,19 +36,6 @@ main{
                 position: absolute;
                 z-index: 5;
             }
-            h2{
-                display: inline-block;
-                margin: 0 auto;
-                z-index: 5;
-            }
-            .textMain{
-                margin-top: 50px;
-                margin-bottom: 50px;
-                .boxText{
-                    margin: 50px;
-                    width: 50%;
-                }
-            }
             .menu{
                 font-size: xx-large;
                 margin-bottom: 60px;
@@ -66,38 +56,31 @@ main{
                         color: $myRed;
                     }
                 }
-                .colonneDroite{
-                    width: 40%;
-                    margin: 0 15px;
-                }
-                .prix{
+                .presentationMenu{
+                    width: 80%;
+                    padding-top: 50px;
                     .euros25{
-                        width: 100%;
-                        border-bottom: 1px rgba(194, 192, 192, 0.637) dashed;
-                        margin: 15px 0;
+                        border-radius: 1px dashed rgba(219, 219, 219, 0.562);
+                        padding: 12px 0;
                         img{
-                            width: 100px;
                             border-radius: 50%;
-                            border: rgba(194, 192, 192, 0.637) solid 5px;
-                        }
-                        .textPrix{
-                            font-size: 15px;
-                            width: 55%;
-                            span{
-                                display: block;
-                            }
-                        }
-                        .font25{
-                            font-size: 20px;
-                            font-weight: 600;
-                            padding: 0 8px;
-                            background-color: #EFEFEF;
+                            border: 5px solid rgba(211, 211, 211, 0.562);
+                            height: 100px;
+                            width: 100px;
                         }
                     }
+                    .textPrix{
+                        max-width: 250px;
+                        padding-left: 20px;
+                        font-size: 14px;
+                        line-height: 25px;
+                    }
+                    .font25{
+                        background-color: rgba(211, 211, 211, 0.562);
+                        font-size: 20px;
+                        padding: 0 10px;
+                    }
                 }
-            }
-            .spaceLine{
-                margin-bottom: 60px;
             }
         }
     }

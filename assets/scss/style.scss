@@ -7,7 +7,6 @@
 @import "./_media.scss";
 
 
-
 // ***************** GENERAL ******************
 
 // les textes en majuscules
@@ -45,9 +44,21 @@ body{
 .myFilter{
     filter: brightness(20%);
 }
+.myFs{
+    font-size: 60px;
+}
 
-.myFsIcon{
-    font-size: 50px;
+.myFs2{
+    font-size: 35px;
+}
+
+.maxW{
+    max-width: 500px;
+}
+.underLine{
+    background-image: url('../img/decoration_line.png');
+    background-position: bottom;
+    background-repeat: no-repeat;
 }
 
 

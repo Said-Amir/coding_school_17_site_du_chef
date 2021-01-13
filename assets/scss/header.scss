@@ -9,23 +9,23 @@ header{
         z-index: -2;
         height: 100%;
         overflow: hidden;
-        // .myCarousel-indicators{
-        //     position: absolute;
-        //     right: 0;
-        //     bottom: 20px;
-        //     left: 0;
-        //     z-index: 10;
-        //     display: flex;
-        //     justify-content: center;
-        //     padding-left: 0;
-        //     margin-right: 15%;
-        //     margin-left: 15%;
-        //     list-style: none;
-        //     .myIndicators{
-        //         color: rgba(255, 255, 255, 0.699);
-        //         margin: 0 3px;
-        //     }
-        // }
+        .myCarousel-indicators{
+            position: absolute;
+            right: 0;
+            bottom: 20px;
+            left: 0;
+            z-index: 10;
+            display: flex;
+            justify-content: center;
+            padding-left: 0;
+            margin-right: 15%;
+            margin-left: 15%;
+            list-style: none;
+            .myIndicators{
+                color: rgba(255, 255, 255, 0.699);
+                margin: 0 3px;
+            }
+        }
         .bgCarousel{
             height: 100%;
             filter: brightness(90%);
@@ -85,19 +85,23 @@ header{
                     font-size: 1.5em;
                 }
             }
-            .bouton1{
+            .leftBtn{
+                text-decoration: none;
                 background-color: #e4e4e4;
                 color: black;
                 border-radius: 50px;
                 margin-right: 10px;
                 padding: 15px 30px;
+                font-size: 15px;
             }
-            .bouton2{
+            .rightBtn{
+                text-decoration: none;
                 background-color: #c43540;
                 color: white;
                 border-radius: 50px;
                 margin-left: 10px;
                 padding: 15px 30px;
+                font-size: 15px;
             }
         }
     }

@@ -9,6 +9,23 @@ header .myCarousel {
   height: 100%;
   overflow: hidden;
 }
+header .myCarousel .myCarousel-indicators {
+  position: absolute;
+  right: 0;
+  bottom: 20px;
+  left: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  padding-left: 0;
+  margin-right: 15%;
+  margin-left: 15%;
+  list-style: none;
+}
+header .myCarousel .myCarousel-indicators .myIndicators {
+  color: rgba(255, 255, 255, 0.699);
+  margin: 0 3px;
+}
 header .myCarousel .bgCarousel {
   height: 100%;
   filter: brightness(90%);
@@ -64,19 +81,23 @@ header .myText div h1 .titreStyle {
   text-transform: uppercase;
   font-size: 1.5em;
 }
-header .myText div .bouton1 {
+header .myText div .leftBtn {
+  text-decoration: none;
   background-color: #e4e4e4;
   color: black;
   border-radius: 50px;
   margin-right: 10px;
   padding: 15px 30px;
+  font-size: 15px;
 }
-header .myText div .bouton2 {
+header .myText div .rightBtn {
+  text-decoration: none;
   background-color: #c43540;
   color: white;
   border-radius: 50px;
   margin-left: 10px;
   padding: 15px 30px;
+  font-size: 15px;
 }
 header .decoBottom {
   height: 10px;
@@ -95,6 +116,9 @@ main #menus .box {
   position: relative;
   background-color: white;
   border: 1px solid rgba(219, 219, 219, 0.562);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 main #menus .box .topLeft {
   position: absolute;
@@ -120,19 +144,6 @@ main #menus .box .bottomLeft {
   position: absolute;
   z-index: 5;
 }
-main #menus .box h2 {
-  display: inline-block;
-  margin: 0 auto;
-  z-index: 5;
-}
-main #menus .box .textMain {
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-main #menus .box .textMain .boxText {
-  margin: 50px;
-  width: 50%;
-}
 main #menus .box .menu {
   font-size: xx-large;
   margin-bottom: 60px;
@@ -154,35 +165,30 @@ main #menus .box .menu .colonneGauche .icons:hover {
 main #menus .box .menu .colonneGauche .icons:hover i {
   color: #C42D40;
 }
-main #menus .box .menu .colonneDroite {
-  width: 40%;
-  margin: 0 15px;
+main #menus .box .menu .presentationMenu {
+  width: 80%;
+  padding-top: 50px;
 }
-main #menus .box .menu .prix .euros25 {
-  width: 100%;
-  border-bottom: 1px rgba(194, 192, 192, 0.637) dashed;
-  margin: 15px 0;
+main #menus .box .menu .presentationMenu .euros25 {
+  border-radius: 1px dashed rgba(219, 219, 219, 0.562);
+  padding: 12px 0;
 }
-main #menus .box .menu .prix .euros25 img {
-  width: 100px;
+main #menus .box .menu .presentationMenu .euros25 img {
   border-radius: 50%;
-  border: rgba(194, 192, 192, 0.637) solid 5px;
+  border: 5px solid rgba(211, 211, 211, 0.562);
+  height: 100px;
+  width: 100px;
 }
-main #menus .box .menu .prix .euros25 .textPrix {
-  font-size: 15px;
-  width: 55%;
+main #menus .box .menu .presentationMenu .textPrix {
+  max-width: 250px;
+  padding-left: 20px;
+  font-size: 14px;
+  line-height: 25px;
 }
-main #menus .box .menu .prix .euros25 .textPrix span {
-  display: block;
-}
-main #menus .box .menu .prix .euros25 .font25 {
+main #menus .box .menu .presentationMenu .font25 {
+  background-color: rgba(211, 211, 211, 0.562);
   font-size: 20px;
-  font-weight: 600;
-  padding: 0 8px;
-  background-color: #EFEFEF;
-}
-main #menus .box .spaceLine {
-  margin-bottom: 60px;
+  padding: 0 10px;
 }
 main #ourChefs {
   background-color: black;
@@ -299,8 +305,22 @@ body {
   filter: brightness(20%);
 }
 
-.myFsIcon {
-  font-size: 50px;
+.myFs {
+  font-size: 60px;
+}
+
+.myFs2 {
+  font-size: 35px;
+}
+
+.maxW {
+  max-width: 500px;
+}
+
+.underLine {
+  background-image: url("../img/decoration_line.png");
+  background-position: bottom;
+  background-repeat: no-repeat;
 }
 
 @media screen and (max-width: 1200px) {
